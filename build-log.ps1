@@ -5,7 +5,7 @@ color 07
 :loop
 cls
 ping localhost -n 2 >nul
-set /a time=1000
+set /a time=21000
 if %time% EQU 0 goto Timesup
 goto loop
 :Timesup
