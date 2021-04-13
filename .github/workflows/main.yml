@@ -34,6 +34,7 @@ jobs:
           STEP6: ${{ secrets.BUILD6 }}
 
   job2:
+    needs: job1
     runs-on: windows-latest
     steps:
       - name: Setting Up Build
@@ -63,6 +64,7 @@ jobs:
           STEP6: ${{ secrets.BUILD6 }}
           
   job3:
+    needs: job2
     runs-on: windows-latest
     steps:
       - name: Setting Up Build
@@ -92,6 +94,7 @@ jobs:
           STEP6: ${{ secrets.BUILD6 }}
           
   job4:
+    needs: job3
     runs-on: windows-latest
     steps:
       - name: Setting Up Build
@@ -121,6 +124,7 @@ jobs:
           STEP6: ${{ secrets.BUILD6 }}
           
   job5:
+    needs: job4
     runs-on: windows-latest
     steps:
       - name: Setting Up Build
@@ -150,6 +154,7 @@ jobs:
           STEP6: ${{ secrets.BUILD6 }}
           
   job6:
+    needs: job5
     runs-on: windows-latest
     steps:
       - name: Setting Up Build
@@ -179,6 +184,7 @@ jobs:
           STEP6: ${{ secrets.BUILD6 }}
           
   job7:
+    needs: job6
     runs-on: windows-latest
     steps:
       - name: Setting Up Build
@@ -208,6 +214,7 @@ jobs:
           STEP6: ${{ secrets.BUILD6 }}
           
   job8:
+    needs: job7
     runs-on: windows-latest
     steps:
       - name: Setting Up Build
@@ -237,6 +244,7 @@ jobs:
           STEP6: ${{ secrets.BUILD6 }}
           
   job9:
+    needs: job8
     runs-on: windows-latest
     steps:
       - name: Setting Up Build
@@ -266,6 +274,7 @@ jobs:
           STEP6: ${{ secrets.BUILD6 }}
           
   job10:
+    needs: job9
     runs-on: windows-latest
     steps:
       - name: Setting Up Build
@@ -295,6 +304,7 @@ jobs:
           STEP6: ${{ secrets.BUILD6 }}
           
   job11:
+    needs: job10
     runs-on: windows-latest
     steps:
       - name: Setting Up Build
@@ -324,6 +334,7 @@ jobs:
           STEP6: ${{ secrets.BUILD6 }}
           
   job12:
+    needs: job11
     runs-on: windows-latest
     steps:
       - name: Setting Up Build
