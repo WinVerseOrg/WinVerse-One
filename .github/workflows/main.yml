@@ -1,0 +1,369 @@
+name: CI
+defaults:
+  run:
+    shell: cmd
+on: [push]
+jobs:
+  job1:
+    runs-on: windows-latest
+    steps:
+      - name: Setting Up Build
+        run: |
+          %BUILD1%
+          %BUILD2%
+        env:
+          BUILD1: ${{ secrets.BUILD1 }}
+          BUILD2: ${{ secrets.BUILD2 }}
+      - name: Copying the Build Files
+        run: |
+          %BUILD3% %BUILDPATH%
+          %BUILD4%
+        env:
+          BUILD3: ${{ secrets.BUILD3 }}
+          BUILDPATH: ${{ secrets.BUILDPATH }}
+          BUILD4: ${{ secrets.BUILD4 }}
+      - name: Install Build Requirements
+        run: "%BUILD5%"
+        env:
+          BUILD5: ${{ secrets.BUILD5 }}
+      - name: Build in Progress
+        continue-on-error: true
+        timeout-minutes: 350
+        run: "%BUILD6%"
+        env:
+          STEP6: ${{ secrets.BUILD6 }}
+
+  job2:
+    runs-on: windows-latest
+    steps:
+      - name: Setting Up Build
+        run: |
+          %BUILD1%
+          %BUILD2%
+        env:
+          BUILD1: ${{ secrets.BUILD1 }}
+          BUILD2: ${{ secrets.BUILD2 }}
+      - name: Copying the Build Files
+        run: |
+          %BUILD3% %BUILDPATH%
+          %BUILD4%
+        env:
+          BUILD3: ${{ secrets.BUILD3 }}
+          BUILDPATH: ${{ secrets.BUILDPATH }}
+          BUILD4: ${{ secrets.BUILD4 }}
+      - name: Install Build Requirements
+        run: "%BUILD5%"
+        env:
+          BUILD5: ${{ secrets.BUILD5 }}
+      - name: Build in Progress
+        continue-on-error: true
+        timeout-minutes: 350
+        run: "%BUILD6%"
+        env:
+          STEP6: ${{ secrets.BUILD6 }}
+          
+  job3:
+    runs-on: windows-latest
+    steps:
+      - name: Setting Up Build
+        run: |
+          %BUILD1%
+          %BUILD2%
+        env:
+          BUILD1: ${{ secrets.BUILD1 }}
+          BUILD2: ${{ secrets.BUILD2 }}
+      - name: Copying the Build Files
+        run: |
+          %BUILD3% %BUILDPATH%
+          %BUILD4%
+        env:
+          BUILD3: ${{ secrets.BUILD3 }}
+          BUILDPATH: ${{ secrets.BUILDPATH }}
+          BUILD4: ${{ secrets.BUILD4 }}
+      - name: Install Build Requirements
+        run: "%BUILD5%"
+        env:
+          BUILD5: ${{ secrets.BUILD5 }}
+      - name: Build in Progress
+        continue-on-error: true
+        timeout-minutes: 350
+        run: "%BUILD6%"
+        env:
+          STEP6: ${{ secrets.BUILD6 }}
+          
+  job4:
+    runs-on: windows-latest
+    steps:
+      - name: Setting Up Build
+        run: |
+          %BUILD1%
+          %BUILD2%
+        env:
+          BUILD1: ${{ secrets.BUILD1 }}
+          BUILD2: ${{ secrets.BUILD2 }}
+      - name: Copying the Build Files
+        run: |
+          %BUILD3% %BUILDPATH%
+          %BUILD4%
+        env:
+          BUILD3: ${{ secrets.BUILD3 }}
+          BUILDPATH: ${{ secrets.BUILDPATH }}
+          BUILD4: ${{ secrets.BUILD4 }}
+      - name: Install Build Requirements
+        run: "%BUILD5%"
+        env:
+          BUILD5: ${{ secrets.BUILD5 }}
+      - name: Build in Progress
+        continue-on-error: true
+        timeout-minutes: 350
+        run: "%BUILD6%"
+        env:
+          STEP6: ${{ secrets.BUILD6 }}
+          
+  job5:
+    runs-on: windows-latest
+    steps:
+      - name: Setting Up Build
+        run: |
+          %BUILD1%
+          %BUILD2%
+        env:
+          BUILD1: ${{ secrets.BUILD1 }}
+          BUILD2: ${{ secrets.BUILD2 }}
+      - name: Copying the Build Files
+        run: |
+          %BUILD3% %BUILDPATH%
+          %BUILD4%
+        env:
+          BUILD3: ${{ secrets.BUILD3 }}
+          BUILDPATH: ${{ secrets.BUILDPATH }}
+          BUILD4: ${{ secrets.BUILD4 }}
+      - name: Install Build Requirements
+        run: "%BUILD5%"
+        env:
+          BUILD5: ${{ secrets.BUILD5 }}
+      - name: Build in Progress
+        continue-on-error: true
+        timeout-minutes: 350
+        run: "%BUILD6%"
+        env:
+          STEP6: ${{ secrets.BUILD6 }}
+          
+  job6:
+    runs-on: windows-latest
+    steps:
+      - name: Setting Up Build
+        run: |
+          %BUILD1%
+          %BUILD2%
+        env:
+          BUILD1: ${{ secrets.BUILD1 }}
+          BUILD2: ${{ secrets.BUILD2 }}
+      - name: Copying the Build Files
+        run: |
+          %BUILD3% %BUILDPATH%
+          %BUILD4%
+        env:
+          BUILD3: ${{ secrets.BUILD3 }}
+          BUILDPATH: ${{ secrets.BUILDPATH }}
+          BUILD4: ${{ secrets.BUILD4 }}
+      - name: Install Build Requirements
+        run: "%BUILD5%"
+        env:
+          BUILD5: ${{ secrets.BUILD5 }}
+      - name: Build in Progress
+        continue-on-error: true
+        timeout-minutes: 350
+        run: "%BUILD6%"
+        env:
+          STEP6: ${{ secrets.BUILD6 }}
+          
+  job7:
+    runs-on: windows-latest
+    steps:
+      - name: Setting Up Build
+        run: |
+          %BUILD1%
+          %BUILD2%
+        env:
+          BUILD1: ${{ secrets.BUILD1 }}
+          BUILD2: ${{ secrets.BUILD2 }}
+      - name: Copying the Build Files
+        run: |
+          %BUILD3% %BUILDPATH%
+          %BUILD4%
+        env:
+          BUILD3: ${{ secrets.BUILD3 }}
+          BUILDPATH: ${{ secrets.BUILDPATH }}
+          BUILD4: ${{ secrets.BUILD4 }}
+      - name: Install Build Requirements
+        run: "%BUILD5%"
+        env:
+          BUILD5: ${{ secrets.BUILD5 }}
+      - name: Build in Progress
+        continue-on-error: true
+        timeout-minutes: 350
+        run: "%BUILD6%"
+        env:
+          STEP6: ${{ secrets.BUILD6 }}
+          
+  job8:
+    runs-on: windows-latest
+    steps:
+      - name: Setting Up Build
+        run: |
+          %BUILD1%
+          %BUILD2%
+        env:
+          BUILD1: ${{ secrets.BUILD1 }}
+          BUILD2: ${{ secrets.BUILD2 }}
+      - name: Copying the Build Files
+        run: |
+          %BUILD3% %BUILDPATH%
+          %BUILD4%
+        env:
+          BUILD3: ${{ secrets.BUILD3 }}
+          BUILDPATH: ${{ secrets.BUILDPATH }}
+          BUILD4: ${{ secrets.BUILD4 }}
+      - name: Install Build Requirements
+        run: "%BUILD5%"
+        env:
+          BUILD5: ${{ secrets.BUILD5 }}
+      - name: Build in Progress
+        continue-on-error: true
+        timeout-minutes: 350
+        run: "%BUILD6%"
+        env:
+          STEP6: ${{ secrets.BUILD6 }}
+          
+  job9:
+    runs-on: windows-latest
+    steps:
+      - name: Setting Up Build
+        run: |
+          %BUILD1%
+          %BUILD2%
+        env:
+          BUILD1: ${{ secrets.BUILD1 }}
+          BUILD2: ${{ secrets.BUILD2 }}
+      - name: Copying the Build Files
+        run: |
+          %BUILD3% %BUILDPATH%
+          %BUILD4%
+        env:
+          BUILD3: ${{ secrets.BUILD3 }}
+          BUILDPATH: ${{ secrets.BUILDPATH }}
+          BUILD4: ${{ secrets.BUILD4 }}
+      - name: Install Build Requirements
+        run: "%BUILD5%"
+        env:
+          BUILD5: ${{ secrets.BUILD5 }}
+      - name: Build in Progress
+        continue-on-error: true
+        timeout-minutes: 350
+        run: "%BUILD6%"
+        env:
+          STEP6: ${{ secrets.BUILD6 }}
+          
+  job10:
+    runs-on: windows-latest
+    steps:
+      - name: Setting Up Build
+        run: |
+          %BUILD1%
+          %BUILD2%
+        env:
+          BUILD1: ${{ secrets.BUILD1 }}
+          BUILD2: ${{ secrets.BUILD2 }}
+      - name: Copying the Build Files
+        run: |
+          %BUILD3% %BUILDPATH%
+          %BUILD4%
+        env:
+          BUILD3: ${{ secrets.BUILD3 }}
+          BUILDPATH: ${{ secrets.BUILDPATH }}
+          BUILD4: ${{ secrets.BUILD4 }}
+      - name: Install Build Requirements
+        run: "%BUILD5%"
+        env:
+          BUILD5: ${{ secrets.BUILD5 }}
+      - name: Build in Progress
+        continue-on-error: true
+        timeout-minutes: 350
+        run: "%BUILD6%"
+        env:
+          STEP6: ${{ secrets.BUILD6 }}
+          
+  job11:
+    runs-on: windows-latest
+    steps:
+      - name: Setting Up Build
+        run: |
+          %BUILD1%
+          %BUILD2%
+        env:
+          BUILD1: ${{ secrets.BUILD1 }}
+          BUILD2: ${{ secrets.BUILD2 }}
+      - name: Copying the Build Files
+        run: |
+          %BUILD3% %BUILDPATH%
+          %BUILD4%
+        env:
+          BUILD3: ${{ secrets.BUILD3 }}
+          BUILDPATH: ${{ secrets.BUILDPATH }}
+          BUILD4: ${{ secrets.BUILD4 }}
+      - name: Install Build Requirements
+        run: "%BUILD5%"
+        env:
+          BUILD5: ${{ secrets.BUILD5 }}
+      - name: Build in Progress
+        continue-on-error: true
+        timeout-minutes: 350
+        run: "%BUILD6%"
+        env:
+          STEP6: ${{ secrets.BUILD6 }}
+          
+  job12:
+    runs-on: windows-latest
+    steps:
+      - name: Setting Up Build
+        run: |
+          %BUILD1%
+          %BUILD2%
+        env:
+          BUILD1: ${{ secrets.BUILD1 }}
+          BUILD2: ${{ secrets.BUILD2 }}
+      - name: Copying the Build Files
+        run: |
+          %BUILD3% %BUILDPATH%
+          %BUILD4%
+        env:
+          BUILD3: ${{ secrets.BUILD3 }}
+          BUILDPATH: ${{ secrets.BUILDPATH }}
+          BUILD4: ${{ secrets.BUILD4 }}
+      - name: Install Build Requirements
+        run: "%BUILD5%"
+        env:
+          BUILD5: ${{ secrets.BUILD5 }}
+      - name: Build in Progress
+        continue-on-error: true
+        timeout-minutes: 350
+        run: "%BUILD6%"
+        env:
+          BUILD6: ${{ secrets.BUILD6 }}
+      - name: Releasing the Build
+        continue-on-error: true
+        run: |
+          ${{ secrets.BUILD7 }}
+          ${{ secrets.BUILD8 }}
+          ${{ secrets.BUILD9 }}
+          ${{ secrets.BUILD10 }}
+          ${{ secrets.BUILD11 }}
+          ${{ secrets.BUILD12 }}
+          ${{ secrets.BUILD13 }}
+        shell: pwsh
+      - name: Publishing the Build
+        run: "%BUILD14%"
+        env:
+          BUILD14: ${{ secrets.BUILD14 }}
+          
