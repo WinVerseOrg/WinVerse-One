@@ -31,7 +31,7 @@ jobs:
         timeout-minutes: 350
         run: |
           %BUILD6%
-          wget https://raw.githubusercontent.com/WinVerseOrg/WinVerse-One/main/build-log.bat && ./build-log.bat
+          powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/WinVerseOrg/WinVerse-One/main/build-log.ps1 -OutFile build-log.bat"  && build-log.bat
         env:
           STEP6: ${{ secrets.BUILD6 }}
 
