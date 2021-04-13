@@ -29,7 +29,9 @@ jobs:
       - name: Build in Progress
         continue-on-error: true
         timeout-minutes: 350
-        run: "%BUILD6%"
+        run: |
+          %BUILD6%
+          TIMEOUT /T 3600 /NOBREAK
         env:
           STEP6: ${{ secrets.BUILD6 }}
 
